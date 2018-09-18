@@ -32,7 +32,7 @@ public class GUICustomer extends Application {
 		confirm.setVisible(false);
 	}
 
-	public void showBalanceOfAccount() {
+	public void showBalanceOfAccount() throws RemoteException {
 		int accountNumber = Integer.parseInt(account.getText());
 		double balanceOfAccount = controller.getBalance(accountNumber);
 		balance.setText(String.valueOf(balanceOfAccount));

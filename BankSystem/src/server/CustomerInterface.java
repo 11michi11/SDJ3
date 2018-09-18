@@ -11,5 +11,5 @@ public interface CustomerInterface extends Remote {
 
 	void withdraw(int amount, int accountNumber) throws RemoteException, InsufficientResourcesException;
 
-	double getBalance(int accountNumber);
+	double getBalance(int accountNumber) throws RemoteException;
 }

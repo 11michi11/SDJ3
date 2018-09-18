@@ -54,7 +54,7 @@ public class BankServer extends UnicastRemoteObject implements AdministratorInte
 	}
 
 	@Override
-	public double getBalance(int accountNumber) {
+	public double getBalance(int accountNumber) throws RemoteException{
 		return accounts.getBalance(accountNumber);
 	}
 

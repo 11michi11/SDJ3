@@ -49,7 +49,7 @@ public class ControllerCustomer {
 		gui.startScene();
 	}
 
-	public double getBalance(int accountNumber) {
+	public double getBalance(int accountNumber) throws RemoteException{
 		return customer.getBalance(accountNumber);
 	}
 }

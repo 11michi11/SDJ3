@@ -27,7 +27,7 @@ public class CommunicationCustomer implements CustomerInterface {
 		server.withdraw(amount, accountNumber);
 	}
 
-	public double getBalance(int accountNumber) {
+	public double getBalance(int accountNumber) throws RemoteException{
 		return server.getBalance(accountNumber);
 	}
 }
