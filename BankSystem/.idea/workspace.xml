@@ -69,8 +69,8 @@
       <file leaf-file-name="GUICustomer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/customer/GUICustomer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
+            <state relative-caret-position="243">
+              <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,7 +81,7 @@
       <file leaf-file-name="customer.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/customer/customer.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="910">
+            <state relative-caret-position="121">
               <caret line="35" column="120" selection-start-line="35" selection-start-column="120" selection-end-line="35" selection-end-column="120" />
             </state>
           </provider>
@@ -388,12 +388,12 @@
       <workItem from="1536661398292" duration="14204000" />
       <workItem from="1537174952432" duration="77000" />
       <workItem from="1537267800849" duration="3501000" />
-      <workItem from="1537271508462" duration="615000" />
+      <workItem from="1537271508462" duration="962000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35584000" />
+    <option name="totallyTimeSpent" value="35931000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -417,13 +417,13 @@
       <window_info anchor="bottom" id="Java Enterprise" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.34507042" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.34507042" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Persistence" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.8887324" visible="true" weight="0.203125" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.83870965" visible="true" weight="0.203125" />
       <window_info id="Learn" order="7" />
       <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info id="Favorites" order="6" sideWeight="0.111267604" side_tool="true" visible="true" weight="0.203125" />
+      <window_info id="Favorites" order="6" sideWeight="0.16129032" side_tool="true" visible="true" weight="0.203125" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
@@ -786,14 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/customer/customer.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="910">
-          <caret line="35" column="120" selection-start-line="35" selection-start-column="120" selection-end-line="35" selection-end-column="120" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/clerk/CommunicationClerk.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
@@ -853,10 +845,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/customer/customer.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="35" column="120" selection-start-line="35" selection-start-column="120" selection-end-line="35" selection-end-column="120" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/customer/GUICustomer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
+        <state relative-caret-position="243">
+          <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

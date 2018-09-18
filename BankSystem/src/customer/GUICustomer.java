@@ -18,7 +18,7 @@ public class GUICustomer extends Application {
 	@FXML
 	private TextField balance;
 	@FXML
-	private Button confirm;
+	private Button confirm, showBalance;
 	private ControllerCustomer controller;
 
 	public GUICustomer () {
@@ -39,6 +39,7 @@ public class GUICustomer extends Application {
 		balance.setVisible(true);
 		amount.setVisible(true);
 		confirm.setVisible(true);
+		showBalance.setVisible(false);
 	}
 
 	@Override
@@ -57,5 +58,7 @@ public class GUICustomer extends Application {
 	public void withdraw() throws RemoteException {
 		controller.withdraw(amount.getText(),account.getText());
 		showBalanceOfAccount();
+
+
 	}
 }
