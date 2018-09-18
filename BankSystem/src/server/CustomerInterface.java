@@ -1,11 +1,9 @@
 package server;
 
-import model.Account;
-
 import javax.naming.InsufficientResourcesException;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
-import java.util.List;
+
 
 public interface CustomerInterface extends Remote {
 
