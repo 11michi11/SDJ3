@@ -1,19 +1,23 @@
-package customer;
+package clients.customer.controller;
 
 import alertDialogs.Message;
+import clients.ClientObserver;
+import clients.customer.view.GUICustomer;
 
 import javax.naming.InsufficientResourcesException;
 import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
 import java.util.NoSuchElementException;
 
-public class ControllerCustomer {
+public class ControllerCustomer extends UnicastRemoteObject implements ClientObserver {
 
 	private static ControllerCustomer instance;
 	private CommunicationCustomer customer;
 	private GUICustomer gui;
+	private int accountNumber;
 
-	private ControllerCustomer() {
-
+	private ControllerCustomer() throws RemoteException {
+		super();
 	}
 	public void setGui(GUICustomer gui) {
 		this.gui = gui;
@@ -23,15 +27,15 @@ public class ControllerCustomer {
 		this.customer = Customer;
 	}
 
-	public static ControllerCustomer getInstance() {
+	public static ControllerCustomer getInstance() throws RemoteException {
 		if(instance == null)
 			instance = new ControllerCustomer();
 		return instance;
 	}
 
-	public void withdraw(String amount, String account) throws RemoteException {
+	public void withdraw(String amount) throws RemoteException {
 		try {
-			customer.withdraw(Integer.parseInt(amount), Integer.parseInt(account));
+			customer.withdraw(Integer.parseInt(amount),accountNumber);
 			Message.acceptedDialog();
 		} catch (NoSuchElementException e) {
 			Message.errorDialog();
@@ -40,7 +44,7 @@ public class ControllerCustomer {
 		}
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws RemoteException {
 		GUICustomer gui = new GUICustomer();
 		CommunicationCustomer customer = new CommunicationCustomer();
 		ControllerCustomer controller = ControllerCustomer.getInstance();
@@ -51,5 +55,21 @@ public class ControllerCustomer {
 
 	public double getBalance(int accountNumber) throws RemoteException{
 		return customer.getBalance(accountNumber);
+	}
+
+	public void showAccountInformation(int accountNumber) {
+		this.accountNumber = accountNumber;
+		customer.registerObserver(this, accountNumber);
+		gui.showAccountInformation(accountNumber);
+	}
+
+	@Override
+	public void update(double balance) {
+		gui.updateBalance(balance);
+	}
+
+
+	public void deregister() {
+		customer.deregisterObserver(this, accountNumber);
 	}
 }

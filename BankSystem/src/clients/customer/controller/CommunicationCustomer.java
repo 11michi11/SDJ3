@@ -1,5 +1,6 @@
-package customer;
+package clients.customer.controller;
 
+import clients.ClientObserver;
 import server.CustomerInterface;
 
 import javax.naming.InsufficientResourcesException;
@@ -13,10 +14,9 @@ public class CommunicationCustomer implements CustomerInterface {
 
 	private CustomerInterface server;
 
-	public CommunicationCustomer () {
+	public CommunicationCustomer() {
 		try {
 			server = (CustomerInterface) Naming.lookup("rmi://localhost:1099/Server");
-
 		} catch (NotBoundException | MalformedURLException | RemoteException e) {
 			e.printStackTrace();
 		}
@@ -29,5 +29,15 @@ public class CommunicationCustomer implements CustomerInterface {
 
 	public double getBalance(int accountNumber) throws RemoteException{
 		return server.getBalance(accountNumber);
+	}
+
+	@Override
+	public void registerObserver(ClientObserver client, int accountNo) {
+		server.registerObserver(client, accountNo);
+	}
+
+	@Override
+	public void deregisterObserver(ClientObserver client, int accountNo) {
+		server.deregisterObserver(client, accountNo);
 	}
 }

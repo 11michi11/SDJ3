@@ -1,5 +1,6 @@
 package server;
 
+import clients.ClientObserver;
 import model.Account;
 import model.AccountList;
 
@@ -9,6 +10,9 @@ import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.NoSuchElementException;
 
 
@@ -16,10 +20,12 @@ public class BankServer extends UnicastRemoteObject implements AdministratorInte
 
 	private AccountList accounts;
 	private DatabaseProxy database;
+	private HashMap<Integer,List<ClientObserver>> observers;
 
 	public BankServer() throws RemoteException {
 		super();
 		accounts = new AccountList();
+		observers = new HashMap<>();
 		try {
 			database = (DatabaseProxy) Naming.lookup("rmi://localhost:1099/Database");
 			database.registerAsObserver(this);
@@ -76,4 +82,27 @@ public class BankServer extends UnicastRemoteObject implements AdministratorInte
 	}
 
 
+	@Override
+	public void registerObserver(ClientObserver client, int accountNo) {
+		List<ClientObserver> list = observers.get(accountNo);
+		if (list != null) {
+			list.add(client);
+			observers.put(accountNo,new LinkedList<>(list));
+		}
+		else {
+			observers.get(accountNo).add(client);
+		}
+	}
+
+	@Override
+	public void deregisterObserver(ClientObserver client, int accountNo) {
+		List<ClientObserver> list = observers.get(accountNo);
+		if (list.size() > 0) {
+			observers.get(accountNo).remove(client);
+		}
+		else
+		{
+			observers.remove(accountNo);
+		}
+	}
 }
