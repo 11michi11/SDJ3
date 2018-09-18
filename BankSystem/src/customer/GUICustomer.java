@@ -56,5 +56,6 @@ public class GUICustomer extends Application {
 
 	public void withdraw() throws RemoteException {
 		controller.withdraw(amount.getText(),account.getText());
+		showBalanceOfAccount();
 	}
 }
