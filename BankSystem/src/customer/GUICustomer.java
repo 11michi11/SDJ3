@@ -40,6 +40,7 @@ public class GUICustomer extends Application {
 		amount.setVisible(true);
 		confirm.setVisible(true);
 		showBalance.setVisible(false);
+		account.setEditable(false);
 	}
 
 	@Override
@@ -58,6 +59,7 @@ public class GUICustomer extends Application {
 	public void withdraw() throws RemoteException {
 		controller.withdraw(amount.getText(),account.getText());
 		showBalanceOfAccount();
+
 
 
 	}
