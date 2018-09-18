@@ -1,5 +1,7 @@
 package customer;
 
+import alertDialogs.Message;
+
 import javax.naming.InsufficientResourcesException;
 import java.rmi.RemoteException;
 import java.util.NoSuchElementException;
@@ -30,11 +32,11 @@ public class ControllerCustomer {
 	public void withdraw(String amount, String account) throws RemoteException {
 		try {
 			customer.withdraw(Integer.parseInt(amount), Integer.parseInt(account));
-			gui.acceptedDialog();
+			Message.acceptedDialog();
 		} catch (NoSuchElementException e) {
-			gui.errorDialog();
+			Message.errorDialog();
 		} catch (InsufficientResourcesException a) {
-			gui.balanceDialog();
+			Message.balanceDialog();
 		}
 	}
 
@@ -45,5 +47,9 @@ public class ControllerCustomer {
 		controller.setCommunication(customer);
 		controller.setGui(gui);
 		gui.startScene();
+	}
+
+	public double getBalance(int accountNumber) {
+		return customer.getBalance(accountNumber);
 	}
 }

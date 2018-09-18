@@ -31,4 +31,9 @@ public class CommunicationClerk implements ClerkInterface{
 	public void withdraw(int amount, int accountNumber) throws RemoteException,InsufficientResourcesException,NoSuchElementException {
 		server.withdraw(amount, accountNumber);
 	}
+
+	@Override
+	public double getBalance(int accountNumber) {
+		return 0;
+	}
 }

@@ -17,6 +17,9 @@ public class ControllerAdmin {
 			instance = new ControllerAdmin();
 		return instance;
 	}
+	public void setGui(GUIAdmin gui) {
+		this.gui = gui;
+	}
 
 
 	public void createAccount(String owner) throws RemoteException {
@@ -34,12 +37,9 @@ public class ControllerAdmin {
 		ControllerAdmin controller = ControllerAdmin.getInstance();
 		controller.setCommunication(admin);
 		controller.setGui(gui);
-		gui.setController(controller);
 		gui.startScene();
 
 	}
 
-	public void setGui(GUIAdmin gui) {
-		this.gui = gui;
-	}
+
 }

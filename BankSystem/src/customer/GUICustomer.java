@@ -4,7 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -15,10 +15,30 @@ public class GUICustomer extends Application {
 
 	@FXML
 	private TextField amount, account;
+	@FXML
+	private TextField balance;
+	@FXML
+	private Button confirm;
 	private ControllerCustomer controller;
 
 	public GUICustomer () {
 		controller = ControllerCustomer.getInstance();
+	}
+
+	@FXML
+	public void initialize() {
+		balance.setVisible(false);
+		amount.setVisible(false);
+		confirm.setVisible(false);
+	}
+
+	public void showBalanceOfAccount() {
+		int accountNumber = Integer.parseInt(account.getText());
+		double balanceOfAccount = controller.getBalance(accountNumber);
+		balance.setText(String.valueOf(balanceOfAccount));
+		balance.setVisible(true);
+		amount.setVisible(true);
+		confirm.setVisible(true);
 	}
 
 	@Override
@@ -37,28 +57,4 @@ public class GUICustomer extends Application {
 	public void withdraw() throws RemoteException {
 		controller.withdraw(amount.getText(),account.getText());
 	}
-
-	public void acceptedDialog() {
-		Alert alert = new Alert(Alert.AlertType.INFORMATION);
-		alert.setTitle("Information Dialog");
-		alert.setHeaderText(null);
-		alert.setContentText("The transaction was completed!");
-		alert.showAndWait();
-	}
-
-	public void errorDialog() {
-		Alert alert = new Alert(Alert.AlertType.ERROR);
-		alert.setTitle("Error Dialog");
-		alert.setHeaderText("The transaction has failed");
-		alert.setContentText("The account doesn't exist");
-		alert.showAndWait();
-	}
-	public void balanceDialog() {
-		Alert alert = new Alert(Alert.AlertType.WARNING);
-		alert.setTitle("Warning Dialog");
-		alert.setHeaderText("The transaction has failed");
-		alert.setContentText("The balance is insufficient");
-		alert.showAndWait();
-	}
-
 }

@@ -38,5 +38,11 @@
             <Font name="Bell MT" size="18.0" />
          </font>
       </Button>
+      <Label layoutX="31.0" layoutY="172.0" text="balance :">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="balance" layoutX="104.0" layoutY="171.0" prefHeight="25.0" prefWidth="110.0" promptText="000000" />
    </children>
 </Pane>

@@ -55,4 +55,12 @@ public class AccountList {
 	public void addAll(List<Account> accounts) {
 		this.accounts.addAll(accounts);
 	}
+
+	public double getBalance(int accountNumber) {
+		for (Account a : accounts) {
+			if (a.getAccountNo() == accountNumber)
+				return a.getBalance();
+		}
+		return -1;
+	}
 }

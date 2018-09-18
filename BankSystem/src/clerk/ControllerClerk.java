@@ -1,6 +1,8 @@
 package clerk;
 
 
+import alertDialogs.Message;
+
 import javax.naming.InsufficientResourcesException;
 import java.rmi.RemoteException;
 import java.util.NoSuchElementException;
@@ -31,20 +33,20 @@ public class ControllerClerk {
 	public void insert(String amount, String account) {
 		try {
 			clerk.insert(Double.parseDouble(amount), Integer.parseInt(account));
-			gui.acceptedDialog();
+			Message.acceptedDialog();
 		} catch (Exception e) {
-			gui.errorDialog();
+			Message.errorDialog();
 		}
 	}
 
 	public void withdraw(String amount, String account) throws RemoteException{
 		try {
 			clerk.withdraw(Integer.parseInt(amount), Integer.parseInt(account));
-			gui.acceptedDialog();
+			Message.acceptedDialog();
 		} catch (NoSuchElementException e) {
-			gui.errorDialog();
+			Message.errorDialog();
 		} catch (InsufficientResourcesException a) {
-			gui.balanceDialog();
+			Message.balanceDialog();
 		}
 	}
 
