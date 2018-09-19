@@ -32,12 +32,12 @@ public class CommunicationCustomer implements CustomerInterface {
 	}
 
 	@Override
-	public void registerObserver(ClientObserver client, int accountNo) {
+	public void registerObserver(ClientObserver client, int accountNo) throws RemoteException {
 		server.registerObserver(client, accountNo);
 	}
 
 	@Override
-	public void deregisterObserver(ClientObserver client, int accountNo) {
+	public void deregisterObserver(ClientObserver client, int accountNo) throws RemoteException{
 		server.deregisterObserver(client, accountNo);
 	}
 }

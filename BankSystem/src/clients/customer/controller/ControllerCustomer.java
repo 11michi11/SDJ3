@@ -2,7 +2,7 @@ package clients.customer.controller;
 
 import alertDialogs.Message;
 import clients.ClientObserver;
-import clients.customer.view.GUICustomer;
+import clients.customer.view.GUICustomerManager;
 
 import javax.naming.InsufficientResourcesException;
 import java.rmi.RemoteException;
@@ -13,13 +13,13 @@ public class ControllerCustomer extends UnicastRemoteObject implements ClientObs
 
 	private static ControllerCustomer instance;
 	private CommunicationCustomer customer;
-	private GUICustomer gui;
+	private GUICustomerManager gui;
 	private int accountNumber;
 
 	private ControllerCustomer() throws RemoteException {
 		super();
 	}
-	public void setGui(GUICustomer gui) {
+	public void setGui(GUICustomerManager gui) {
 		this.gui = gui;
 	}
 
@@ -45,7 +45,7 @@ public class ControllerCustomer extends UnicastRemoteObject implements ClientObs
 	}
 
 	public static void main(String[] args) throws RemoteException {
-		GUICustomer gui = new GUICustomer();
+		GUICustomerManager gui = new GUICustomerManager();
 		CommunicationCustomer customer = new CommunicationCustomer();
 		ControllerCustomer controller = ControllerCustomer.getInstance();
 		controller.setCommunication(customer);
@@ -57,19 +57,19 @@ public class ControllerCustomer extends UnicastRemoteObject implements ClientObs
 		return customer.getBalance(accountNumber);
 	}
 
-	public void showAccountInformation(int accountNumber) {
+	public void showAccountInformation(int accountNumber) throws RemoteException {
 		this.accountNumber = accountNumber;
-		customer.registerObserver(this, accountNumber);
+		customer.registerObserver( getInstance(), accountNumber);
 		gui.showAccountInformation(accountNumber);
 	}
 
 	@Override
-	public void update(double balance) {
+	public void update(double balance) throws RemoteException {
 		gui.updateBalance(balance);
 	}
 
 
-	public void deregister() {
+	public void deregister() throws RemoteException{
 		customer.deregisterObserver(this, accountNumber);
 	}
 }

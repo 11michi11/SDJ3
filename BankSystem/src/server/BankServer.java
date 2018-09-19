@@ -69,7 +69,21 @@ public class BankServer extends UnicastRemoteObject implements AdministratorInte
 			accountTemp.setBalance(account.getBalance());
 		else
 			accounts.addAcount(account);
+
+		notifyObservers(account);
+
 	}
+
+	private void notifyObservers(Account account) {
+		observers.get(account.getAccountNo()).forEach(o -> {
+			try {
+				o.update(account.getBalance());
+			} catch (RemoteException e) {
+				e.printStackTrace();
+			}
+		});
+	}
+
 
 	public static void main(String[] args) {
 		try {
@@ -83,11 +97,13 @@ public class BankServer extends UnicastRemoteObject implements AdministratorInte
 
 
 	@Override
-	public void registerObserver(ClientObserver client, int accountNo) {
+	public void registerObserver(ClientObserver client, int accountNo) throws RemoteException {
+		System.out.println("starting registering observers");
 		List<ClientObserver> list = observers.get(accountNo);
-		if (list != null) {
+		if (list == null) {
+			list = new LinkedList<>();
 			list.add(client);
-			observers.put(accountNo,new LinkedList<>(list));
+			observers.put(accountNo,list);
 		}
 		else {
 			observers.get(accountNo).add(client);
@@ -95,7 +111,8 @@ public class BankServer extends UnicastRemoteObject implements AdministratorInte
 	}
 
 	@Override
-	public void deregisterObserver(ClientObserver client, int accountNo) {
+	public void deregisterObserver(ClientObserver client, int accountNo) throws RemoteException {
+		System.out.println("starting deregistering observers");
 		List<ClientObserver> list = observers.get(accountNo);
 		if (list.size() > 0) {
 			observers.get(accountNo).remove(client);

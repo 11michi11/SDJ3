@@ -1,6 +1,4 @@
-package administrator;
-
-import model.Account;
+package clients.administrator;
 
 import java.rmi.RemoteException;
 

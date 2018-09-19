@@ -1,6 +1,9 @@
 package clients;
 
-public interface ClientObserver {
+import java.rmi.Remote;
+import java.rmi.RemoteException;
 
-	void update(double balance);
+public interface ClientObserver extends Remote {
+
+	void update(double balance) throws RemoteException;
 }

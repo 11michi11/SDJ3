@@ -1,5 +1,6 @@
-package administrator;
+package clients.administrator;
 
+import clients.ClientObserver;
 import server.AdministratorInterface;
 
 import java.net.MalformedURLException;
@@ -24,7 +25,5 @@ public class CommunicationAdmin implements AdministratorInterface {
 		server.createAccount(owner);
 
 	}
-
-
 
 }

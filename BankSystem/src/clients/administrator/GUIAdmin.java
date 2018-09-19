@@ -1,4 +1,4 @@
-package administrator;
+package clients.administrator;
 
 import javafx.application.Application;
 import javafx.fxml.FXML;
@@ -24,7 +24,7 @@ public class GUIAdmin extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		Pane root =  FXMLLoader.load(getClass().getClassLoader().getResource("administrator/administrator.fxml"));
+		Pane root =  FXMLLoader.load(getClass().getClassLoader().getResource("clients/administrator/administrator.fxml"));
 		Scene scene = new Scene(root, 600, 400);
 		//scene.getStylesheets().add(getClass().getResource("/client/view/fxml/login.css").toExternalForm());
 		primaryStage.setScene(scene);

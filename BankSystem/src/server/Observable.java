@@ -2,8 +2,11 @@ package server;
 
 import clients.ClientObserver;
 
-public interface Observable {
+import java.rmi.Remote;
+import java.rmi.RemoteException;
 
-	void registerObserver(ClientObserver client, int accountNo);
-	void deregisterObserver(ClientObserver client, int accountNo);
+public interface Observable extends Remote {
+
+	void registerObserver(ClientObserver client, int accountNo) throws RemoteException;
+	void deregisterObserver(ClientObserver client, int accountNo) throws RemoteException;
 }

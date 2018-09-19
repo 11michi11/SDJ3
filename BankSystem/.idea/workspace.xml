@@ -2,35 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07762aaf-023c-4f1b-9e0d-1e8194fb47f1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/clients/ClientObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clients/customer/view/GUIAccountNumberInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clients/customer/view/GUICustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clients/customer/view/GUICustomerOnAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/Observable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/clients/clerk/view/GUIClerkAccountInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/clients/clerk/view/GUIClerkInformation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/clients/clerk/view/GUIClerkManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/customer/CommunicationCustomer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/customer/ControllerCustomer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/customer/GUICustomer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/customer/bank.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/customer/customer.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/administrator/CommunicationAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/administrator/CommunicationAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/administrator/ControllerAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/administrator/ControllerAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/administrator/GUIAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/administrator/GUIAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/administrator/administrator.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/administrator/administrator.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/administrator/bank.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/administrator/bank.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clerk/CommunicationClerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/clerk/CommunicationClerk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clerk/ControllerClerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/clerk/ControllerClerk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clerk/GUIClerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/clerk/GUIClerk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clerk/bank.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/clerk/bank.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clerk/clerk.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/clerk/clerk.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/CommunicationCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/customer/controller/CommunicationCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/ControllerCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/customer/controller/ControllerCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/GUICustomer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/bank.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/customer/view/bank.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/customer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/customer/view/customer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/administrator/CommunicationAdmin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/administrator/ControllerAdmin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/administrator/GUIAdmin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/administrator/administrator.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/administrator/bank.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/clerk/CommunicationClerk.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/clerk/ControllerClerk.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/clerk/GUIClerk.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/clerk/bank.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/clerk/clerk.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/customer/controller/CommunicationCustomer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/customer/controller/ControllerCustomer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/customer/view/GUIAccountNumberInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/customer/view/GUICustomer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/customer/view/GUICustomerOnAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/customer/view/bank.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/customer/view/customer.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/customer/view/customerOnAccount.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/server/BankServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankSystem/server/BankServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/server/CustomerInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankSystem/server/CustomerInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clients/ClientObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/ClientObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clients/administrator/CommunicationAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/administrator/CommunicationAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clients/administrator/ControllerAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/administrator/ControllerAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clients/administrator/GUIAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/administrator/GUIAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clients/administrator/administrator.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/administrator/administrator.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clients/clerk/CommunicationClerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/clerk/controller/CommunicationClerk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clients/clerk/ControllerClerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/clerk/controller/ControllerClerk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clients/clerk/GUIClerk.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clients/clerk/bank.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/clerk/view/bank.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clients/clerk/clerk.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/clerk/view/clerk.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clients/customer/controller/CommunicationCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/customer/controller/CommunicationCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clients/customer/controller/ControllerCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/customer/controller/ControllerCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clients/customer/view/GUIAccountNumberInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/customer/view/GUICustomerAccountInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clients/customer/view/GUICustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/customer/view/GUICustomerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clients/customer/view/GUICustomerOnAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/customer/view/GUICustomerInformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clients/customer/view/customer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/customer/view/customer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clients/customer/view/customerOnAccount.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/customer/view/customerOnAccount.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/AdministratorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/AdministratorInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/BankServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/BankServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/CustomerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/CustomerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/Observable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Observable.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,23 +95,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BankServer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/server/BankServer.java">
+      <file leaf-file-name="GUICustomerManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/clients/customer/view/GUICustomerManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="88" column="29" lean-forward="true" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-910">
+              <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AccountList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/AccountList.java">
+      <file leaf-file-name="GUIClerkManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/GUIClerkManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
+            <state relative-caret-position="1124">
+              <caret line="51" column="35" lean-forward="true" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,61 +119,8 @@
       <file leaf-file-name="ControllerCustomer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/clients/customer/controller/ControllerCustomer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="72" column="55" selection-start-line="72" selection-start-column="55" selection-end-line="72" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#495#496#0" expanded="true" />
-                <element signature="e#516#517#0" expanded="true" />
-                <element signature="e#581#582#0" expanded="true" />
-                <element signature="e#612#613#0" expanded="true" />
-                <element signature="e#1872#1873#0" expanded="true" />
-                <element signature="e#1881#1882#0" expanded="true" />
-                <element signature="e#1985#1986#0" expanded="true" />
-                <element signature="e#1999#2000#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Observable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/server/Observable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="66" lean-forward="true" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommunicationCustomer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/clients/customer/controller/CommunicationCustomer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-              <folding>
-                <element signature="e#1072#1073#0" expanded="true" />
-                <element signature="e#1104#1105#0" expanded="true" />
-                <element signature="e#1205#1206#0" expanded="true" />
-                <element signature="e#1232#1233#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomerInterface.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/server/CustomerInterface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GUICustomer.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/clients/customer/view/GUICustomer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="47" column="63" selection-start-line="47" selection-start-column="63" selection-end-line="47" selection-end-column="63" />
+            <state relative-caret-position="1135">
+              <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,16 +128,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GUICustomerOnAccount.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/clients/customer/view/GUICustomerOnAccount.java">
+      <file leaf-file-name="GUIClerkInformation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/GUIClerkInformation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+            <state relative-caret-position="162">
+              <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1001#1002#0" expanded="true" />
-                <element signature="e#1041#1042#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControllerClerk.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/clients/clerk/controller/ControllerClerk.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GUICustomerInformation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/clients/customer/view/GUICustomerInformation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -184,8 +163,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -204,18 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/AdministratorInterface.java" />
-        <option value="$PROJECT_DIR$/src/Customer.java" />
-        <option value="$PROJECT_DIR$/src/ClerkInterface.java" />
-        <option value="$PROJECT_DIR$/src/Account.java" />
-        <option value="$PROJECT_DIR$/src/DatabaseProxy.java" />
-        <option value="$PROJECT_DIR$/src/DatabaseObserver.java" />
-        <option value="$PROJECT_DIR$/src/AccountList.java" />
-        <option value="$PROJECT_DIR$/src/BankServer.java" />
-        <option value="$PROJECT_DIR$/GUI/administrator.fxml" />
-        <option value="$PROJECT_DIR$/src/administrator/communicationAdmin.java" />
-        <option value="$PROJECT_DIR$/src/server/Database.java" />
-        <option value="$PROJECT_DIR$/src/administrator/CommunicationAdmin.java" />
         <option value="$PROJECT_DIR$/src/clerk/clerk.fxml" />
         <option value="$PROJECT_DIR$/src/customer/CommunicationCustomerInterface.java" />
         <option value="$PROJECT_DIR$/src/model/Account.java" />
@@ -246,13 +213,27 @@
         <option value="$PROJECT_DIR$/src/customer/controller/ControllerCustomer.java" />
         <option value="$PROJECT_DIR$/src/clients/customer/view/customerOnAccount.fxml" />
         <option value="$PROJECT_DIR$/src/clients/customer/view/GUICustomerOnAccount.java" />
-        <option value="$PROJECT_DIR$/src/server/Observable.java" />
-        <option value="$PROJECT_DIR$/src/server/CustomerInterface.java" />
-        <option value="$PROJECT_DIR$/src/server/AdministratorInterface.java" />
-        <option value="$PROJECT_DIR$/src/server/BankServer.java" />
+        <option value="$PROJECT_DIR$/src/clients/clerk/CommunicationClerk.java" />
         <option value="$PROJECT_DIR$/src/clients/customer/controller/CommunicationCustomer.java" />
-        <option value="$PROJECT_DIR$/src/clients/customer/controller/ControllerCustomer.java" />
         <option value="$PROJECT_DIR$/src/clients/customer/view/GUICustomer.java" />
+        <option value="$PROJECT_DIR$/src/clients/customer/view/GUIAccountNumberInput.java" />
+        <option value="$PROJECT_DIR$/src/clients/administrator/CommunicationAdmin.java" />
+        <option value="$PROJECT_DIR$/src/server/Observable.java" />
+        <option value="$PROJECT_DIR$/src/server/AdministratorInterface.java" />
+        <option value="$PROJECT_DIR$/src/server/CustomerInterface.java" />
+        <option value="$PROJECT_DIR$/src/clients/ClientObserver.java" />
+        <option value="$PROJECT_DIR$/src/clients/customer/controller/ControllerCustomer.java" />
+        <option value="$PROJECT_DIR$/src/server/BankServer.java" />
+        <option value="$PROJECT_DIR$/src/clients/clerk/clerk.fxml" />
+        <option value="$PROJECT_DIR$/src/clients/clerk/GUIClerk.java" />
+        <option value="$PROJECT_DIR$/src/clients/clerk/view/GUIClerk.java" />
+        <option value="$PROJECT_DIR$/src/clients/clerk/view/clerkInformation.fxml" />
+        <option value="$PROJECT_DIR$/src/clients/clerk/view/GUIClerkAccountInput.java" />
+        <option value="$PROJECT_DIR$/src/clients/clerk/controller/CommunicationClerk.java" />
+        <option value="$PROJECT_DIR$/src/clients/clerk/view/GUIClerkManager.java" />
+        <option value="$PROJECT_DIR$/src/clients/clerk/view/GUIClerkInformation.java" />
+        <option value="$PROJECT_DIR$/src/clients/clerk/view/clerk.fxml" />
+        <option value="$PROJECT_DIR$/src/clients/clerk/controller/ControllerClerk.java" />
       </list>
     </option>
   </component>
@@ -279,8 +260,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -317,6 +299,22 @@
               <item name="BankSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="clients" type="462c0819:PsiDirectoryNode" />
+              <item name="clerk" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
+              <item name="clerk" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
               <item name="customer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -339,13 +337,18 @@
               <item name="Bank" type="b2602c69:ProjectViewProjectNode" />
               <item name="BankSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -364,15 +367,20 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="server" />
     </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="clients.clerk.view" />
+      <recent name="customer" />
+      <recent name="clerk" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="clients.clerk.controller" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\misii\Desktop\SDJ3\BankSystem\src\clients\clerk\view" />
       <recent name="C:\Users\misii\Desktop\SDJ3\BankSystem\src\customer\view" />
       <recent name="C:\Users\misii\Desktop\VIA\3.semester\SDJ3\BankSystem\src\customer" />
       <recent name="C:\Users\misii\Desktop\VIA\3.semester\SDJ3\BankSystem\src\clerk" />
       <recent name="C:\Users\misii\Desktop\VIA\3.semester\SDJ3\BankSystem\src\administrator" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="customer" />
-      <recent name="clerk" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -411,17 +419,17 @@
       </extension>
     </configuration>
     <configuration name="ControllerClerk" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="clients.clerk.ControllerClerk" />
+      <option name="MAIN_CLASS_NAME" value="clients.clerk.controller.ControllerClerk" />
       <module name="BankSystem" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="clients.clerk.*" />
+          <option name="PATTERN" value="clients.clerk.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="ControllerCustomer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ControllerCustomer" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="clients.customer.controller.ControllerCustomer" />
       <module name="BankSystem" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -494,15 +502,14 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.ControllerCustomer" />
       <item itemvalue="Application.Database" />
       <item itemvalue="Application.BankServer" />
       <item itemvalue="Application.ControllerAdmin" />
       <item itemvalue="Application.ControllerClerk" />
-      <item itemvalue="Application.ControllerCustomer" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ControllerCustomer" />
         <item itemvalue="Application.ControllerClerk" />
         <item itemvalue="Application.BankServer" />
         <item itemvalue="Application.Database" />
@@ -529,15 +536,15 @@
       <workItem from="1537267800849" duration="3501000" />
       <workItem from="1537271508462" duration="2399000" />
       <workItem from="1537282518284" duration="9551000" />
+      <workItem from="1537361149735" duration="8470000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46919000" />
+    <option name="totallyTimeSpent" value="55389000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32957748" />
@@ -557,43 +564,19 @@
       <window_info anchor="bottom" id="Java Enterprise" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.34507042" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.34366196" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Persistence" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8859155" visible="true" weight="0.203125" />
-      <window_info id="Learn" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info id="Favorites" order="6" sideWeight="0.114084505" side_tool="true" visible="true" weight="0.203125" />
-      <window_info anchor="bottom" id="Message" order="2" />
-      <window_info id="Learn" order="7" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="6" sideWeight="0.16129032" side_tool="true" visible="true" weight="0.203125" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Java Enterprise" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32957748" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.34507042" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Persistence" order="0" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="TODO" order="8" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info id="UI Designer" order="5" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.8352113" visible="true" weight="0.35677084" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32816902" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.83870965" visible="true" weight="0.203125" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32957748" />
-      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Learn" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Favorites" order="6" sideWeight="0.16478874" side_tool="true" visible="true" weight="0.35677084" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info id="Designer" order="3" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,6 +584,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="9" />
+    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -612,41 +600,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/server/DatabaseProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/DatabaseObserver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/CustomerInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clients/administrator/CommunicationAdmin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/AccountList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="858">
@@ -675,13 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/DatabaseObserver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/server/CustomerInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -707,12 +653,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clients/administrator/administrator.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="23" column="100" lean-forward="true" selection-start-line="23" selection-start-column="100" selection-end-line="23" selection-end-column="100" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/javafx-src.zip!/javafx/application/Application.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -742,46 +688,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clients/clerk/clerk.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="270" selection-start-line="11" selection-start-column="256" selection-end-line="11" selection-end-column="270" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/DatabaseProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/DatabaseObservable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/database/Hibernate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="15" column="47" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clients/administrator/CommunicationAdmin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -792,31 +702,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clients/clerk/GUIClerk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="904">
-          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clients/clerk/ControllerClerk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="45" column="43" lean-forward="true" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/clients/administrator/ControllerAdmin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="676">
           <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2717">
-          <caret line="1770" column="27" selection-start-line="1770" selection-start-column="27" selection-end-line="1770" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -828,68 +717,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clients/customer/view/customer.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="805">
           <caret line="35" column="120" selection-start-line="35" selection-start-column="120" selection-end-line="35" selection-end-column="120" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clients/clerk/bank.jpg">
+    <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/bank.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clients/customer/view/bank.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clients/customer/view/GUICustomer.java">
+    <entry file="file://$PROJECT_DIR$/src/clients/customer/view/GUICustomerManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1118">
           <caret line="51" column="70" selection-start-line="51" selection-start-column="70" selection-end-line="51" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clients/customer/view/GUIAccountNumberInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="6" column="34" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#88#89#0" expanded="true" />
-            <element signature="e#165#166#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clients/customer/view/customer.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clients/ClientObserver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clients/customer/view/customerOnAccount.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -900,16 +744,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/Observable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="66" lean-forward="true" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/AccountList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
+        <state relative-caret-position="1274">
           <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
         </state>
       </provider>
@@ -921,87 +758,230 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/AdministratorInterface.java">
+    <entry file="file://$PROJECT_DIR$/src/clients/customer/view/customer.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
+        <state relative-caret-position="242">
+          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clients/customer/view/customerOnAccount.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/javafx-src.zip!/javafx/scene/control/TextInputControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="347" column="35" selection-start-line="347" selection-start-column="35" selection-end-line="347" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clients/clerk/CommunicationClerk.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="175">
+          <caret line="1772" selection-start-line="1772" selection-end-line="1772" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clients/administrator/CommunicationAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/AdministratorInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/DatabaseObservable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/DatabaseProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/DatabaseObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server/BankServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="88" column="29" lean-forward="true" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
+        <state relative-caret-position="159">
+          <caret line="80" column="41" lean-forward="true" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clients/customer/view/GUICustomerOnAccount.java">
+    <entry file="file://$PROJECT_DIR$/src/database/Database.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        <state relative-caret-position="130">
+          <caret line="47" column="24" lean-forward="true" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="89" selection-start-line="10" selection-start-column="89" selection-end-line="10" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1001#1002#0" expanded="true" />
-            <element signature="e#1041#1042#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clients/customer/controller/ControllerCustomer.java">
+    <entry file="file://$PROJECT_DIR$/src/clients/ClientObserver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="72" column="55" selection-start-line="72" selection-start-column="55" selection-end-line="72" selection-end-column="55" />
+        <state relative-caret-position="234">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#1872#1873#0" expanded="true" />
-            <element signature="e#1881#1882#0" expanded="true" />
-            <element signature="e#1985#1986#0" expanded="true" />
-            <element signature="e#1999#2000#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clients/customer/controller/CommunicationCustomer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-          <folding>
-            <element signature="e#1072#1073#0" expanded="true" />
-            <element signature="e#1104#1105#0" expanded="true" />
-            <element signature="e#1205#1206#0" expanded="true" />
-            <element signature="e#1232#1233#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server/CustomerInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+        <state relative-caret-position="130">
+          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clients/customer/view/GUICustomer.java">
+    <entry file="file://$PROJECT_DIR$/src/clients/customer/view/GUICustomerAccountInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="47" column="63" selection-start-line="47" selection-start-column="63" selection-end-line="47" selection-end-column="63" />
+        <state relative-caret-position="147">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/GUIClerkAccountInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clients/clerk/controller/CommunicationClerk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clients/customer/controller/CommunicationCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clients/customer/view/GUICustomerManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-910">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clients/customer/controller/ControllerCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1135">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/GUIClerkManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1124">
+          <caret line="51" column="35" lean-forward="true" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clients/customer/view/GUICustomerInformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/clerk.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="23" column="104" selection-start-line="23" selection-start-column="104" selection-end-line="23" selection-end-column="104" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/clerkInformation.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="34" column="94" selection-start-line="34" selection-start-column="94" selection-end-line="34" selection-end-column="94" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/GUIClerk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="53" column="51" lean-forward="true" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/GUIClerkInformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clients/clerk/controller/ControllerClerk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
         </state>
       </provider>
     </entry>
