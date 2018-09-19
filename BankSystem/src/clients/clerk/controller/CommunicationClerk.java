@@ -1,4 +1,4 @@
-package clients.clerk;
+package clients.clerk.controller;
 
 import clients.ClientObserver;
 import server.ClerkInterface;
@@ -33,17 +33,17 @@ public class CommunicationClerk implements ClerkInterface{
 	}
 
 	@Override
-	public double getBalance(int accountNumber) {
-		return 0;
+	public double getBalance(int accountNumber) throws RemoteException {
+		return server.getBalance(accountNumber);
 	}
 
 	@Override
-	public void registerObserver(ClientObserver client, int accountNo) {
-
+	public void registerObserver(ClientObserver client, int accountNo) throws RemoteException {
+		server.registerObserver(client, accountNo);
 	}
 
 	@Override
-	public void deregisterObserver(ClientObserver client, int accountNo) {
-
+	public void deregisterObserver(ClientObserver client, int accountNo) throws RemoteException {
+		server.registerObserver(client, accountNo);
 	}
 }

@@ -2,51 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07762aaf-023c-4f1b-9e0d-1e8194fb47f1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/clients/clerk/view/GUIClerkAccountInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clients/clerk/view/GUIClerkInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clients/clerk/view/GUIClerkManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/administrator/CommunicationAdmin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/administrator/ControllerAdmin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/administrator/GUIAdmin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/administrator/administrator.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/administrator/bank.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/clerk/CommunicationClerk.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/clerk/ControllerClerk.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/clerk/GUIClerk.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/clerk/bank.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/clerk/clerk.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/customer/controller/CommunicationCustomer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/customer/controller/ControllerCustomer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/customer/view/GUIAccountNumberInput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/customer/view/GUICustomer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/customer/view/GUICustomerOnAccount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/customer/view/bank.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/customer/view/customer.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/customer/view/customerOnAccount.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/server/BankServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankSystem/server/BankServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankSystem/server/CustomerInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankSystem/server/CustomerInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clients/ClientObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/ClientObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clients/administrator/CommunicationAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/administrator/CommunicationAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clients/administrator/ControllerAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/administrator/ControllerAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clients/administrator/GUIAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/administrator/GUIAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clients/administrator/administrator.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/administrator/administrator.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clients/clerk/CommunicationClerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/clerk/controller/CommunicationClerk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clients/clerk/ControllerClerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/clerk/controller/ControllerClerk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clients/clerk/GUIClerk.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clients/clerk/bank.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/clerk/view/bank.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clients/clerk/clerk.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/clerk/view/clerk.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clients/customer/controller/CommunicationCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/customer/controller/CommunicationCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clients/customer/controller/ControllerCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/customer/controller/ControllerCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clients/customer/view/GUIAccountNumberInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/customer/view/GUICustomerAccountInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clients/customer/view/GUICustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/customer/view/GUICustomerManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clients/customer/view/GUICustomerOnAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/customer/view/GUICustomerInformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clients/customer/view/customer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/customer/view/customer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clients/customer/view/customerOnAccount.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/customer/view/customerOnAccount.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/AdministratorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/AdministratorInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/BankServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/BankServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/CustomerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/CustomerInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/Observable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Observable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clients/clerk/controller/CommunicationClerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/clerk/controller/CommunicationClerk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clients/clerk/controller/ControllerClerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/clerk/controller/ControllerClerk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clients/clerk/view/clerk.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/clerk/view/clerk.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,8 +57,8 @@
       <file leaf-file-name="GUICustomerManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/clients/customer/view/GUICustomerManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-910">
-              <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            <state relative-caret-position="104">
+              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -107,8 +66,8 @@
       <file leaf-file-name="GUIClerkManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/GUIClerkManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1124">
-              <caret line="51" column="35" lean-forward="true" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+            <state relative-caret-position="1014">
+              <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,8 +78,8 @@
       <file leaf-file-name="ControllerCustomer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/clients/customer/controller/ControllerCustomer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1135">
-              <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+            <state relative-caret-position="1196">
+              <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,8 +90,8 @@
       <file leaf-file-name="GUIClerkInformation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/GUIClerkInformation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+            <state relative-caret-position="546">
+              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,8 +102,11 @@
       <file leaf-file-name="ControllerClerk.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/clients/clerk/controller/ControllerClerk.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+            <state relative-caret-position="488">
+              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -153,7 +115,7 @@
         <entry file="file://$PROJECT_DIR$/src/clients/customer/view/GUICustomerInformation.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="78">
-              <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -260,7 +222,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
@@ -349,6 +310,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -395,7 +357,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ControllerCustomer">
+  <component name="RunManager" selected="Application.ControllerAdmin">
     <configuration name="BankServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="server.BankServer" />
       <module name="BankSystem" />
@@ -510,10 +472,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ControllerAdmin" />
         <item itemvalue="Application.ControllerClerk" />
         <item itemvalue="Application.BankServer" />
         <item itemvalue="Application.Database" />
-        <item itemvalue="Application.ControllerAdmin" />
       </list>
     </recent_temporary>
   </component>
@@ -537,14 +499,16 @@
       <workItem from="1537271508462" duration="2399000" />
       <workItem from="1537282518284" duration="9551000" />
       <workItem from="1537361149735" duration="8470000" />
+      <workItem from="1537370238481" duration="175000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55389000" />
+    <option name="totallyTimeSpent" value="55564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32957748" />
@@ -567,16 +531,16 @@
       <window_info anchor="bottom" id="Run" order="4" weight="0.34366196" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Persistence" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.8352113" visible="true" weight="0.35677084" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.32816902" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.8338028" visible="true" weight="0.35677084" />
       <window_info id="Learn" order="7" />
       <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info id="Favorites" order="6" sideWeight="0.16478874" side_tool="true" visible="true" weight="0.35677084" />
+      <window_info id="Favorites" order="6" sideWeight="0.16619718" side_tool="true" visible="true" weight="0.35677084" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.32816902" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,9 +603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1222">
           <caret line="52" column="55" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -827,9 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -837,9 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="80" column="41" lean-forward="true" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -854,9 +809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="10" column="89" selection-start-line="10" selection-start-column="89" selection-end-line="10" selection-end-column="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -864,9 +816,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -881,9 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -913,15 +859,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clients/customer/view/GUICustomerManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-910">
-          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        <state relative-caret-position="104">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clients/customer/controller/ControllerCustomer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1135">
-          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+        <state relative-caret-position="1196">
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -930,8 +876,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/GUIClerkManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1124">
-          <caret line="51" column="35" lean-forward="true" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+        <state relative-caret-position="1014">
+          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -941,7 +887,7 @@
     <entry file="file://$PROJECT_DIR$/src/clients/customer/view/GUICustomerInformation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
-          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -961,17 +907,11 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/GUIClerk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="53" column="51" lean-forward="true" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/GUIClerk.java" />
     <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/GUIClerkInformation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+        <state relative-caret-position="546">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -980,8 +920,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clients/clerk/controller/ControllerClerk.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        <state relative-caret-position="488">
+          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
