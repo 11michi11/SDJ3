@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07762aaf-023c-4f1b-9e0d-1e8194fb47f1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clients/clerk/controller/CommunicationClerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/clerk/controller/CommunicationClerk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clients/clerk/controller/ControllerClerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/clerk/controller/ControllerClerk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clients/clerk/view/clerk.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/clients/clerk/view/clerk.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="07762aaf-023c-4f1b-9e0d-1e8194fb47f1" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,17 +52,17 @@
       <file leaf-file-name="GUICustomerManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/clients/customer/view/GUICustomerManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
+            <state>
               <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GUIClerkManager.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GUIClerkManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/GUIClerkManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1014">
-              <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+            <state relative-caret-position="130">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,32 +73,8 @@
       <file leaf-file-name="ControllerCustomer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/clients/customer/controller/ControllerCustomer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1196">
+            <state relative-caret-position="592">
               <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GUIClerkInformation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/GUIClerkInformation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControllerClerk.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/clients/clerk/controller/ControllerClerk.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -500,41 +471,42 @@
       <workItem from="1537282518284" duration="9551000" />
       <workItem from="1537361149735" duration="8470000" />
       <workItem from="1537370238481" duration="175000" />
+      <workItem from="1537445256293" duration="1180000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55564000" />
+    <option name="totallyTimeSpent" value="56744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32957748" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="8" />
-      <window_info id="Designer" order="3" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="5" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32957748" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="bottom" id="Java Enterprise" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32957748" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.34366196" />
       <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info id="Capture Tool" order="8" />
       <window_info id="Persistence" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.8338028" visible="true" weight="0.35677084" />
+      <window_info id="Designer" order="3" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.83239436" visible="true" weight="0.35677084" />
+      <window_info anchor="right" id="Database" order="5" />
       <window_info id="Learn" order="7" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="5" />
       <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info id="Favorites" order="6" sideWeight="0.16619718" side_tool="true" visible="true" weight="0.35677084" />
+      <window_info id="Favorites" order="6" sideWeight="0.16760564" side_tool="true" visible="true" weight="0.35677084" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32957748" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
@@ -614,12 +586,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clients/administrator/administrator.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="23" column="100" lean-forward="true" selection-start-line="23" selection-start-column="100" selection-end-line="23" selection-end-column="100" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/javafx-src.zip!/javafx/application/Application.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -678,12 +650,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clients/customer/view/customer.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="805">
           <caret line="35" column="120" selection-start-line="35" selection-start-column="120" selection-end-line="35" selection-end-column="120" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/bank.jpg">
       <provider selected="true" editor-type-id="images" />
@@ -720,20 +692,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clients/customer/view/customer.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clients/customer/view/customerOnAccount.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/javafx-src.zip!/javafx/scene/control/TextInputControl.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -837,9 +809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -859,28 +828,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clients/customer/view/GUICustomerManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
+        <state>
           <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clients/customer/controller/ControllerCustomer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1196">
-          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/GUIClerkManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1014">
-          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -892,25 +841,35 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/clerk.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="23" column="104" selection-start-line="23" selection-start-column="104" selection-end-line="23" selection-end-column="104" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/clerkInformation.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="34" column="94" selection-start-line="34" selection-start-column="94" selection-end-line="34" selection-end-column="94" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/GUIClerk.java" />
+    <entry file="file://$PROJECT_DIR$/src/clients/clerk/controller/ControllerClerk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/GUIClerkInformation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
+        <state relative-caret-position="390">
           <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -918,10 +877,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clients/clerk/controller/ControllerClerk.java">
+    <entry file="file://$PROJECT_DIR$/src/clients/customer/controller/ControllerCustomer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+        <state relative-caret-position="592">
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clients/clerk/view/GUIClerkManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

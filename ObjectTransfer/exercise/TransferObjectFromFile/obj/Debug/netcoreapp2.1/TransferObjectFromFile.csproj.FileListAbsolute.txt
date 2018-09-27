@@ -1,0 +1,11 @@
+C:\Users\misii\Desktop\SDJ3\ObjectTransfer\exercise\TransferObjectFromFile\bin\Debug\netcoreapp2.1\TransferObjectFromFile.deps.json
+C:\Users\misii\Desktop\SDJ3\ObjectTransfer\exercise\TransferObjectFromFile\bin\Debug\netcoreapp2.1\TransferObjectFromFile.runtimeconfig.json
+C:\Users\misii\Desktop\SDJ3\ObjectTransfer\exercise\TransferObjectFromFile\bin\Debug\netcoreapp2.1\TransferObjectFromFile.runtimeconfig.dev.json
+C:\Users\misii\Desktop\SDJ3\ObjectTransfer\exercise\TransferObjectFromFile\bin\Debug\netcoreapp2.1\TransferObjectFromFile.dll
+C:\Users\misii\Desktop\SDJ3\ObjectTransfer\exercise\TransferObjectFromFile\bin\Debug\netcoreapp2.1\TransferObjectFromFile.pdb
+C:\Users\misii\Desktop\SDJ3\ObjectTransfer\exercise\TransferObjectFromFile\obj\Debug\netcoreapp2.1\TransferObjectFromFile.csprojAssemblyReference.cache
+C:\Users\misii\Desktop\SDJ3\ObjectTransfer\exercise\TransferObjectFromFile\obj\Debug\netcoreapp2.1\TransferObjectFromFile.csproj.CoreCompileInputs.cache
+C:\Users\misii\Desktop\SDJ3\ObjectTransfer\exercise\TransferObjectFromFile\obj\Debug\netcoreapp2.1\TransferObjectFromFile.AssemblyInfoInputs.cache
+C:\Users\misii\Desktop\SDJ3\ObjectTransfer\exercise\TransferObjectFromFile\obj\Debug\netcoreapp2.1\TransferObjectFromFile.AssemblyInfo.cs
+C:\Users\misii\Desktop\SDJ3\ObjectTransfer\exercise\TransferObjectFromFile\obj\Debug\netcoreapp2.1\TransferObjectFromFile.dll
+C:\Users\misii\Desktop\SDJ3\ObjectTransfer\exercise\TransferObjectFromFile\obj\Debug\netcoreapp2.1\TransferObjectFromFile.pdb
