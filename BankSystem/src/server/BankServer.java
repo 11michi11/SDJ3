@@ -71,17 +71,18 @@ public class BankServer extends UnicastRemoteObject implements AdministratorInte
 			accounts.addAcount(account);
 
 		notifyObservers(account);
-
 	}
 
 	private void notifyObservers(Account account) {
-		observers.get(account.getAccountNo()).forEach(o -> {
-			try {
-				o.update(account.getBalance());
-			} catch (RemoteException e) {
-				e.printStackTrace();
-			}
-		});
+		if (observers.get(account.getAccountNo()) != null) {
+			observers.get(account.getAccountNo()).forEach(o -> {
+				try {
+					o.update(account.getBalance());
+				} catch (RemoteException e) {
+					e.printStackTrace();
+				}
+			});
+		}
 	}
 
 

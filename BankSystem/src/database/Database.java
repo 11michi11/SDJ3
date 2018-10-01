@@ -46,11 +46,13 @@ public class Database extends UnicastRemoteObject implements DatabaseProxy{
 	}
 
 	private void notifyObservers(Account account)  {
-		for (DatabaseObserver o: observers) {
-			try {
-				o.update(account);
-			} catch (RemoteException e) {
-				e.printStackTrace();
+		if (observers != null) {
+			for (DatabaseObserver o : observers) {
+				try {
+					o.update(account);
+				} catch (RemoteException e) {
+					e.printStackTrace();
+				}
 			}
 		}
 	}
