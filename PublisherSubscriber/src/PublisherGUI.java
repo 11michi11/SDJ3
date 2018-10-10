@@ -25,7 +25,7 @@ public class PublisherGUI {
 			System.out.println("No message was published");
 		}
 		else {
-			publisher.publish(new Message(message.toString(),TopicCategory.values()[topic-1]));
+			publisher.publish(new Message(message.toString().substring(0,message.length()-10),TopicCategory.values()[topic-1]));
 			System.out.println("The message was published");
 		}
 		System.out.println("Session is closed");
