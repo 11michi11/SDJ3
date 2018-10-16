@@ -1,43 +1,35 @@
 package clients.customer.controller;
 
 import clients.ClientObserver;
-import server.CustomerInterface;
+import server.BankInterface;
 
 import javax.naming.InsufficientResourcesException;
-import java.net.MalformedURLException;
-import java.rmi.Naming;
-import java.rmi.NotBoundException;
-import java.rmi.RemoteException;
 import java.util.NoSuchElementException;
 
-public class CommunicationCustomer implements CustomerInterface {
+public class CommunicationCustomer  {
 
-	private CustomerInterface server;
+	private BankInterface server;
 
 	public CommunicationCustomer() {
-		try {
-			server = (CustomerInterface) Naming.lookup("rmi://localhost:1099/Server");
-		} catch (NotBoundException | MalformedURLException | RemoteException e) {
-			e.printStackTrace();
-		}
+		// get bank proxy
 	}
 
-	@Override
-	public void withdraw(int amount, int accountNumber) throws RemoteException,InsufficientResourcesException,NoSuchElementException {
+
+	public void withdraw(int amount, int accountNumber) throws NoSuchElementException, InsufficientResourcesException {
 		server.withdraw(amount, accountNumber);
 	}
 
-	public double getBalance(int accountNumber) throws RemoteException{
+	public double getBalance(int accountNumber) {
 		return server.getBalance(accountNumber);
 	}
 
-	@Override
-	public void registerObserver(ClientObserver client, int accountNo) throws RemoteException {
+
+	public void registerObserver(ClientObserver client, int accountNo)  {
 		server.registerObserver(client, accountNo);
 	}
 
-	@Override
-	public void deregisterObserver(ClientObserver client, int accountNo) throws RemoteException{
+
+	public void deregisterObserver(ClientObserver client, int accountNo) {
 		server.deregisterObserver(client, accountNo);
 	}
 }

@@ -1,28 +1,24 @@
 package clients.administrator;
 
-import server.AdministratorInterface;
+
+import server.BankInterface;
 
 import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 
-public class CommunicationAdmin implements AdministratorInterface {
+public class CommunicationAdmin {
 
-	private AdministratorInterface server;
+	private BankInterface server;
 
 	public CommunicationAdmin() {
-		try {
-			server = (AdministratorInterface) Naming.lookup("rmi://localhost:1099/Server");
-		} catch (NotBoundException | MalformedURLException | RemoteException e) {
-			e.printStackTrace();
-		}
+		//get bank proxy
 	}
 
-	@Override
+
 	public void createAccount(String owner) throws RemoteException {
 		server.createAccount(owner);
-
 	}
 
 }

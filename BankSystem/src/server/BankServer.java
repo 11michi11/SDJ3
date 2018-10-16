@@ -1,12 +1,15 @@
 package server;
 
 import clients.ClientObserver;
+import database.Database;
+import database.DatabaseInterface;
 import database.DatabaseProxy;
 import model.Account;
 import model.AccountList;
 
 import javax.jws.WebService;
 import javax.naming.InsufficientResourcesException;
+import javax.xml.ws.Endpoint;
 import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.NotBoundException;
@@ -19,108 +22,96 @@ import java.util.NoSuchElementException;
 @WebService
 public class BankServer implements BankInterface {
 
-	private AccountList accounts;
-	private DatabaseProxy database;
-	private HashMap<Integer,List<ClientObserver>> observers;
+    private AccountList accounts;
+    private DatabaseInterface database;
+    private HashMap<Integer, List<ClientObserver>> observers;
 
-	public BankServer() throws RemoteException {
-		accounts = new AccountList();
-		observers = new HashMap<>();
-		try {
-			database = (DatabaseProxy) Naming.lookup("rmi://localhost:1099/Database");
-			database.registerAsObserver(this);
-			accounts.addAll(database.restoreState());
-			System.out.println(this.accounts);
-		} catch (NotBoundException | MalformedURLException e) {
-			e.printStackTrace();
-		}
-	}
+    public BankServer() {
+        accounts = new AccountList();
+        observers = new HashMap<>();
+        // get databse proxy
+        database.registerAsObserver(this);
+        accounts.addAll(database.restoreState());
+        System.out.println(this.accounts);
+    }
 
-	@Override
-	public void createAccount(String owner) {
-		Account account = new Account(owner);
-		accounts.addAcount(account);
-		database.addAccount(account);
-		System.out.println(owner + " account was added to database");
-	}
+    @Override
+    public void createAccount(String owner) {
+        Account account = new Account(owner);
+        accounts.addAcount(account);
+        database.addAccount(account);
+        System.out.println(owner + " account was added to database");
+    }
 
-	@Override
-	public void insert(double amount, int accountNumber) throws Exception {
-		accounts.insert(amount, accountNumber);
-		database.updateAccount(accounts.exists(accountNumber));
-	}
+    @Override
+    public void insert(double amount, int accountNumber) throws Exception {
+        accounts.insert(amount, accountNumber);
+        database.updateAccount(accounts.exists(accountNumber));
+    }
 
-	@Override
-	public void withdraw(int amount, int accountNumber) throws InsufficientResourcesException, NoSuchElementException, RemoteException {
-		accounts.withdraw(amount, accountNumber);
-		database.updateAccount(accounts.exists(accountNumber));
+    @Override
+    public void withdraw(int amount, int accountNumber) throws NoSuchElementException, InsufficientResourcesException {
+        accounts.withdraw(amount, accountNumber);
+        database.updateAccount(accounts.exists(accountNumber));
 
-	}
+    }
 
-	@Override
-	public double getBalance(int accountNumber) {
-		return accounts.getBalance(accountNumber);
-	}
+    @Override
+    public double getBalance(int accountNumber) {
+        return accounts.getBalance(accountNumber);
+    }
 
-	@Override
-	public void update(Account account) {
-		Account accountTemp = accounts.exists(account.getAccountNo());
-		if (accountTemp != null)
-			accountTemp.setBalance(account.getBalance());
-		else
-			accounts.addAcount(account);
+    @Override
+    public void update(Account account) {
+        Account accountTemp = accounts.exists(account.getAccountNo());
+        if (accountTemp != null)
+            accountTemp.setBalance(account.getBalance());
+        else
+            accounts.addAcount(account);
 
-		notifyObservers(account);
-	}
+        notifyObservers(account);
+    }
 
-	private void notifyObservers(Account account) {
-		if (observers.get(account.getAccountNo()) != null) {
-			observers.get(account.getAccountNo()).forEach(o -> {
-				try {
-					o.update(account.getBalance());
-				} catch (RemoteException e) {
-					e.printStackTrace();
-				}
-			});
-		}
-	}
+    private void notifyObservers(Account account) {
+        if (observers.get(account.getAccountNo()) != null) {
+            observers.get(account.getAccountNo()).forEach(o -> {
+                try {
+                    o.update(account.getBalance());
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                }
+            });
+        }
+    }
 
 
-	public static void main(String[] args) {
-		try {
-			//Registry reg = LocateRegistry.createRegistry(1099);
-			Naming.bind("Server", new BankServer());
-			System.out.println("Server is up");
-		} catch (RemoteException | MalformedURLException | java.rmi.AlreadyBoundException e) {
-			e.printStackTrace();
-		}
-	}
+    @Override
+    public void registerObserver(ClientObserver client, int accountNo) {
+        System.out.println("starting registering observers");
+        List<ClientObserver> list = observers.get(accountNo);
+        if (list == null) {
+            list = new LinkedList<>();
+            list.add(client);
+            observers.put(accountNo, list);
+        } else {
+            observers.get(accountNo).add(client);
+        }
+    }
 
+    @Override
+    public void deregisterObserver(ClientObserver client, int accountNo) {
+        System.out.println("starting deregistering observers");
+        List<ClientObserver> list = observers.get(accountNo);
+        if (list.size() > 0) {
+            observers.get(accountNo).remove(client);
+        } else {
+            observers.remove(accountNo);
+        }
+    }
 
-	@Override
-	public void registerObserver(ClientObserver client, int accountNo)  {
-		System.out.println("starting registering observers");
-		List<ClientObserver> list = observers.get(accountNo);
-		if (list == null) {
-			list = new LinkedList<>();
-			list.add(client);
-			observers.put(accountNo,list);
-		}
-		else {
-			observers.get(accountNo).add(client);
-		}
-	}
-
-	@Override
-	public void deregisterObserver(ClientObserver client, int accountNo) throws RemoteException {
-		System.out.println("starting deregistering observers");
-		List<ClientObserver> list = observers.get(accountNo);
-		if (list.size() > 0) {
-			observers.get(accountNo).remove(client);
-		}
-		else
-		{
-			observers.remove(accountNo);
-		}
-	}
+    public static void main(String[] args) {
+        Object impl = new BankServer();
+        String address = "http://localhost:9001/Bank";
+        Endpoint.publish(address, impl);
+    }
 }

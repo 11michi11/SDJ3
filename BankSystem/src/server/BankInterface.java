@@ -18,7 +18,7 @@ public interface BankInterface {
 	void insert(double amount, int accountNumber) throws Exception;
 
 	@WebMethod
-	void withdraw(int amount, int accountNumber);
+	void withdraw(int amount, int accountNumber) throws InsufficientResourcesException;
 
 	@WebMethod
 	double getBalance(int accountNumber);

@@ -43,14 +43,12 @@ public class ControllerClerk extends UnicastRemoteObject implements ClientObserv
 		}
 	}
 
-	public void withdraw(String amount) throws RemoteException{
+	public void withdraw(String amount){
 		try {
 			clerk.withdraw(Integer.parseInt(amount), accountNo);
 			Message.acceptedDialog();
-		} catch (NoSuchElementException e) {
+		} catch (NoSuchElementException | InsufficientResourcesException e) {
 			Message.errorDialog();
-		} catch (InsufficientResourcesException a) {
-			Message.balanceDialog();
 		}
 	}
 

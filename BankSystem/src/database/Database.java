@@ -5,11 +5,7 @@ import server.BankInterface;
 import server.BankServer;
 
 import javax.jws.WebService;
-import java.net.MalformedURLException;
-import java.rmi.Naming;
-import java.rmi.RemoteException;
-import java.rmi.registry.LocateRegistry;
-import java.rmi.registry.Registry;
+import javax.xml.ws.Endpoint;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -17,15 +13,15 @@ import java.util.List;
 public class Database implements DatabaseInterface{
 
 	private DatabaseProxy hibernate;
-	private List<BankInterface> observers;
+	private List<BankServer> observers;
 
 	public Database()  {
-		hibernate = new Hibernate();
+		//hibernate = new Hibernate();
 		observers = new LinkedList<>();
 	}
 
 	@Override
-	public void registerAsObserver(BankInterface observer){
+	public void registerAsObserver(BankServer observer){
 		observers.add(observer);
 	}
 
@@ -60,6 +56,8 @@ public class Database implements DatabaseInterface{
 	}
 
 	public static void main(String[] args) {
-
+		Object impl = new Database();
+		String address = "http://localhost:9000/Database";
+		Endpoint.publish(address, impl);
 	}
 }
