@@ -1,6 +1,5 @@
 package clients.administrator;
 
-import clients.ClientObserver;
 import server.AdministratorInterface;
 
 import java.net.MalformedURLException;

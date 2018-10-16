@@ -6,10 +6,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-import server.DatabaseObserver;
-import server.DatabaseProxy;
-
-import java.rmi.RemoteException;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -32,12 +28,12 @@ public class Hibernate implements DatabaseProxy {
 	}
 
 	@Override
-	public void saveState(List<Account> accountList) throws RemoteException {
+	public void saveState(List<Account> accountList) {
 		accountList.forEach(this::updateObject);
 	}
 
 	@Override
-	public List<Account> restoreState() throws RemoteException {
+	public List<Account> restoreState() {
 		Transaction tx = null;
 		try (Session session = ourSessionFactory.openSession()) {
 			tx = session.beginTransaction();
@@ -52,12 +48,12 @@ public class Hibernate implements DatabaseProxy {
 	}
 
 	@Override
-	public void updateAccount(Account account) throws RemoteException {
+	public void updateAccount(Account account)  {
 		updateObject(account);
 	}
 
 	@Override
-	public void addAccount(Account account) throws RemoteException {
+	public void addAccount(Account account) {
 		addObject(account);
 	}
 

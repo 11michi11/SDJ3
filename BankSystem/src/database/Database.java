@@ -1,46 +1,45 @@
 package database;
 
 import model.Account;
-import server.DatabaseObservable;
-import server.DatabaseObserver;
-import server.DatabaseProxy;
+import server.BankInterface;
+import server.BankServer;
 
+import javax.jws.WebService;
 import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
-import java.rmi.server.UnicastRemoteObject;
 import java.util.LinkedList;
 import java.util.List;
-
-public class Database extends UnicastRemoteObject implements DatabaseProxy{
+@WebService(endpointInterface = "database.DatabaseInterface")
+public class Database implements DatabaseInterface{
 
 	private DatabaseProxy hibernate;
-	private List<DatabaseObserver> observers;
+	private List<BankServer> observers;
 
-	protected Database() throws RemoteException {
+	public Database()  {
 		hibernate = new Hibernate();
 		observers = new LinkedList<>();
 	}
 
 	@Override
-	public void registerAsObserver(DatabaseObserver observer) throws RemoteException {
+	public void registerAsObserver(BankServer observer){
 		observers.add(observer);
 	}
 
 	@Override
-	public void saveState(List<Account> accountList) throws RemoteException {
+	public void saveState(List<Account> accountList){
 		hibernate.saveState(accountList);
 	}
 
 	@Override
-	public List<Account> restoreState() throws RemoteException {
+	public List<Account> restoreState(){
 		return hibernate.restoreState();
 	}
 
 	@Override
-	public void updateAccount(Account account) throws RemoteException {
+	public void updateAccount(Account account){
 		hibernate.updateAccount(account);
 		notifyObservers(account);
 	}
@@ -48,17 +47,13 @@ public class Database extends UnicastRemoteObject implements DatabaseProxy{
 	private void notifyObservers(Account account)  {
 		if (observers != null) {
 			for (DatabaseObserver o : observers) {
-				try {
 					o.update(account);
-				} catch (RemoteException e) {
-					e.printStackTrace();
-				}
 			}
 		}
 	}
 
 	@Override
-	public void addAccount(Account account) throws RemoteException {
+	public void addAccount(Account account){
 		hibernate.addAccount(account);
 		notifyObservers(account);
 	}

@@ -1,29 +1,29 @@
 package server;
 
 import clients.ClientObserver;
+import database.DatabaseProxy;
 import model.Account;
 import model.AccountList;
 
+import javax.jws.WebService;
 import javax.naming.InsufficientResourcesException;
 import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
-import java.rmi.server.UnicastRemoteObject;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-
-public class BankServer extends UnicastRemoteObject implements AdministratorInterface, ClerkInterface, CustomerInterface, DatabaseObserver {
+@WebService
+public class BankServer implements BankInterface {
 
 	private AccountList accounts;
 	private DatabaseProxy database;
 	private HashMap<Integer,List<ClientObserver>> observers;
 
 	public BankServer() throws RemoteException {
-		super();
 		accounts = new AccountList();
 		observers = new HashMap<>();
 		try {
@@ -37,7 +37,7 @@ public class BankServer extends UnicastRemoteObject implements AdministratorInte
 	}
 
 	@Override
-	public void createAccount(String owner) throws RemoteException {
+	public void createAccount(String owner) {
 		Account account = new Account(owner);
 		accounts.addAcount(account);
 		database.addAccount(account);
@@ -58,7 +58,7 @@ public class BankServer extends UnicastRemoteObject implements AdministratorInte
 	}
 
 	@Override
-	public double getBalance(int accountNumber) throws RemoteException{
+	public double getBalance(int accountNumber) {
 		return accounts.getBalance(accountNumber);
 	}
 
@@ -98,7 +98,7 @@ public class BankServer extends UnicastRemoteObject implements AdministratorInte
 
 
 	@Override
-	public void registerObserver(ClientObserver client, int accountNo) throws RemoteException {
+	public void registerObserver(ClientObserver client, int accountNo)  {
 		System.out.println("starting registering observers");
 		List<ClientObserver> list = observers.get(accountNo);
 		if (list == null) {
