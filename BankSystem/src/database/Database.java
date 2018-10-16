@@ -12,11 +12,12 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.LinkedList;
 import java.util.List;
+
 @WebService(endpointInterface = "database.DatabaseInterface")
 public class Database implements DatabaseInterface{
 
 	private DatabaseProxy hibernate;
-	private List<BankServer> observers;
+	private List<BankInterface> observers;
 
 	public Database()  {
 		hibernate = new Hibernate();
@@ -24,7 +25,7 @@ public class Database implements DatabaseInterface{
 	}
 
 	@Override
-	public void registerAsObserver(BankServer observer){
+	public void registerAsObserver(BankInterface observer){
 		observers.add(observer);
 	}
 
@@ -46,7 +47,7 @@ public class Database implements DatabaseInterface{
 
 	private void notifyObservers(Account account)  {
 		if (observers != null) {
-			for (DatabaseObserver o : observers) {
+			for (BankInterface o : observers) {
 					o.update(account);
 			}
 		}
@@ -59,12 +60,6 @@ public class Database implements DatabaseInterface{
 	}
 
 	public static void main(String[] args) {
-		try {
-			Registry reg = LocateRegistry.createRegistry(1099);
-			Naming.bind("Database", new Database());
-			System.out.println("Database is up");
-		} catch (RemoteException | MalformedURLException | java.rmi.AlreadyBoundException e) {
-			e.printStackTrace();
-		}
+
 	}
 }

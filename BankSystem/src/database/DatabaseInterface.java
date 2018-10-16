@@ -26,7 +26,7 @@ public interface DatabaseInterface {
 	public void addAccount(Account account);
 
 	@WebMethod
-	public void registerAsObserver(BankServer observer);
+	public void registerAsObserver(BankInterface observer);
 
 
 }
