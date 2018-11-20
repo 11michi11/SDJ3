@@ -33,17 +33,14 @@ public class ControllerCustomer extends UnicastRemoteObject implements ClientObs
 		return instance;
 	}
 
-	public void withdraw(String amount) throws RemoteException {
+	public void withdraw(String amount) {
 		try {
-			customer.withdraw(Integer.parseInt(amount),accountNumber);
+			customer.withdraw(Integer.parseInt(amount), accountNumber);
 			Message.acceptedDialog();
-		} catch (NoSuchElementException e) {
+		} catch (NoSuchElementException | InsufficientResourcesException e) {
 			Message.errorDialog();
-		} catch (InsufficientResourcesException a) {
-			Message.balanceDialog();
 		}
 	}
-
 	public static void main(String[] args) throws RemoteException {
 		GUICustomerManager gui = new GUICustomerManager();
 		CommunicationCustomer customer = new CommunicationCustomer();
