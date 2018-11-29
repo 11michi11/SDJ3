@@ -1,0 +1,31 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@if (User.Identity.IsAuthenticated)
+{
+    <div>
+        Hello, @User.Identity.Name !
+        
+        <form method="post" asp-page-handler="Logout">
+            <button type="submit">Log out</button>
+        </form>
+    </div>
+}
+else
+{
+    <div>
+        <p>"Enter your name:"</p>
+        <form method="post" asp-page-handler="Login">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name"/>
+            
+            <label for="userType">UserType</label>
+            <input type="text" id="userType" name="userType"/>
+            
+            <button type="submit">Log In</button>
+        </form>
+    </div>
+}
